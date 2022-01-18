@@ -1,4 +1,4 @@
-# my-vue-app
+# order-product-vue-app
 
 ## Project setup
 ```
