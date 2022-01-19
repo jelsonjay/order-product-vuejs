@@ -1,0 +1,81 @@
+{
+	"ingredients": {
+		"crust": [
+			{
+				"id": 1,
+				"type": "Onion"
+			},
+			{
+				"id": 2,
+				"type": "Extra Cheese"
+			},
+			{
+				"id": 3,
+				"type": "Black Olives"
+			},
+			{
+				"id": 4,
+				"type": "Green Pepper"
+			}
+		],
+		"meat": [
+			{
+				"id": 1,
+				"type": "Chicken"
+			},
+			{
+				"id": 2,
+				"type": "Sausage"
+			},
+			{
+				"id": 3,
+				"type": "Fresh Garlic"
+			},
+			{
+				"id": 4,
+				"type": "Veggi"
+			}
+		],
+		"optional": [
+			{
+				"id": 1,
+				"type": "Chicken"
+			},
+			{
+				"id": 2,
+				"type": "Mushrooms and Banana Peppers"
+			},
+			{
+				"id": 3,
+				"type": "Green Olives and Mashroom"
+			},
+			{
+				"id": 4,
+				"type": "Tomate Ham"
+			},
+			{
+				"id": 4,
+				"type": "Jalapenos and Pineapple"
+			},
+			{
+				"id": 4,
+				"type": "Olives and Bacon"
+			}
+		]
+	},
+	"status": [
+		{
+			"id": 1,
+			"type": "Solicitado"
+		},
+		{
+			"id": 2,
+			"type": "Em produção"
+		},
+		{
+			"id": 3,
+			"type": "Finalizado"
+		}
+	],
+	"pizzas": []
+}
