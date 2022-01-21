@@ -1,5 +1,5 @@
 <template>
-	<Menu />
+	<Menu :logo="logoImg" :alt="altTitle" />
 	<router-view />
 	<Footer />
 </template>
@@ -12,8 +12,34 @@ export default {
 	components: {
 		Menu,
 		Footer
+	},
+	data() {
+		return {
+			logoImg: '/images/logo-p.jpg',
+			altTitle: 'Order Pizza'
+		};
 	}
 };
 </script>
 
-<style></style>
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background: #444;
+	font-family: monospace;
+}
+.main {
+	margin: 3.125rem;
+	min-height: 19.625rem;
+}
+h1 {
+	text-align: center;
+	font-size: 2.764rem;
+	font-weight: bold;
+	color: #e77669;
+}
+</style>
