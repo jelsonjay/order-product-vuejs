@@ -17,8 +17,9 @@ export default {
 
 <style scoped>
 .menu {
+	max-width: 70vw;
+	margin: 0 auto;
 	background: #fff;
-	border-bottom: 4px solid #758;
 	padding: 1rem 2.5rem;
 	display: flex;
 	justify-content: flex-end;

@@ -29,7 +29,7 @@ export default {
 	box-sizing: border-box;
 }
 body {
-	background: #444;
+	background: #fff;
 	font-family: monospace;
 }
 .main {
