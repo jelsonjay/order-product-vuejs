@@ -23,15 +23,6 @@ export default {
 </script>
 
 <style>
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-body {
-	background: #fff;
-	font-family: monospace;
-}
 .main {
 	margin: 3.125rem;
 	min-height: 19.625rem;

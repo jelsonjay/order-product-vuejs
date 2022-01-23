@@ -1,7 +1,6 @@
 <template>
 	<Hero />
 	<div class="main">
-		<h2>Best Fast Food In the Towon</h2>
 		<PizzaForm />
 	</div>
 </template>

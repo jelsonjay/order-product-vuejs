@@ -1,5 +1,5 @@
 <template>
-	<h1>Pizza form</h1>
+	<Message :msg="msg" v-show="msg" />
 	<form id="form" @submit="createProduct">
 		<div class="input-wrapper">
 			<label for="name">Client Name</label>
@@ -12,7 +12,7 @@
 			/>
 		</div>
 		<div class="input-wrapper">
-			<label for="item">Choose type of crust</label>
+			<label for="crust">Choose type of crust</label>
 			<select name="crust" id="crust" v-model="crust">
 				<option value="">Select crust</option>
 				<option v-for="crust in crusts" :key="crust.id" :value="crust.type">
@@ -21,7 +21,7 @@
 			</select>
 		</div>
 		<div class="input-wrapper">
-			<label for="item">Choose the type of meat</label>
+			<label for="meat">Choose the type of meat</label>
 			<select name="meat" id="meat" v-model="meat">
 				<option value="">Select meat</option>
 				<option v-for="meat in meats" :key="meat.id" :value="meat.type">
@@ -53,8 +53,12 @@
 </template>
 
 <script>
+import Message from './Message.vue';
 export default {
 	name: 'PizzaForm',
+	components: {
+		Message
+	},
 	data() {
 		return {
 			meats: null,
@@ -64,7 +68,7 @@ export default {
 			options: [],
 			crust: null,
 			meat: null,
-			message: null
+			msg: null
 		};
 	},
 	methods: {
@@ -87,10 +91,30 @@ export default {
 				options: Array.from(this.options),
 				crust: this.crust
 			};
-			//	const jsonData = JSON.stringify(data);
+			const jsonData = JSON.stringify(data);
+			const req = await fetch('http://localhost:3000/pizzas', {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' },
+				body: jsonData
+			});
+			const res = await req.json();
+			console.log(res);
+			//	console.log(data);
 
-			//const req = await fetch()
-			console.log(data);
+			// show an message
+			this.msg = `Congratulations your order N ${res.id} has been placed`;
+
+			// hidden message alert
+			setTimeout(() => {
+				this.msg = '';
+			}, 2000);
+			//setTimeout(() => (this.msg = ''), 3000);
+
+			//clean input field
+			this.name = '';
+			this.crust = '';
+			this.meat = '';
+			this.options = '';
 		}
 	},
 	mounted() {
@@ -143,7 +167,7 @@ select {
 	font-weight: bold;
 }
 .submit-btn {
-	background: #fa8072;
+	background: #418a4d;
 	color: hsl(30, 100%, 100%);
 	font-weight: bold;
 	padding: 0.6rem;
@@ -152,9 +176,10 @@ select {
 	margin: 0 auto;
 	cursor: pointer;
 	transition: 0.5s;
+	outline: none;
 }
 .submit-btn:hover {
 	background: transparent;
-	color: #fa8072;
+	color: #0e0a0a;
 }
 </style>

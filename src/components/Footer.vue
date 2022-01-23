@@ -14,7 +14,7 @@ export default {
 	background: #ccc;
 	height: 10rem;
 	border-top: 0.4rem solid #758;
-	color: salmon;
+	color: #fa8072;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -22,7 +22,7 @@ export default {
 	width: 100%;
 }
 p {
-	font-size: 2rem;
-	color: black;
+	font-size: 1.5rem;
+	color: #fa8072;
 }
 </style>

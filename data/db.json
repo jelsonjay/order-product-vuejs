@@ -1,81 +1,114 @@
 {
-	"ingredients": {
-		"crusts": [
-			{
-				"id": 1,
-				"type": "Onion"
-			},
-			{
-				"id": 2,
-				"type": "Extra Cheese"
-			},
-			{
-				"id": 3,
-				"type": "Black Olives"
-			},
-			{
-				"id": 4,
-				"type": "Green Pepper"
-			}
-		],
-		"meats": [
-			{
-				"id": 1,
-				"type": "Chicken"
-			},
-			{
-				"id": 2,
-				"type": "Sausage"
-			},
-			{
-				"id": 3,
-				"type": "Fresh Garlic"
-			},
-			{
-				"id": 4,
-				"type": "Veggi"
-			}
-		],
-		"options": [
-			{
-				"id": 1,
-				"type": "Chicken"
-			},
-			{
-				"id": 2,
-				"type": "Mushrooms and Banana Peppers"
-			},
-			{
-				"id": 3,
-				"type": "Green Olives and Mashroom"
-			},
-			{
-				"id": 4,
-				"type": "Tomate Ham"
-			},
-			{
-				"id": 5,
-				"type": "Jalapenos and Pineapple"
-			},
-			{
-				"id": 6,
-				"type": "Olives and Bacon"
-			}
-		]
-	},
-	"status": [
-		{
-			"id": 1,
-			"type": "Solicitado"
-		},
-		{
-			"id": 2,
-			"type": "Em produção"
-		},
-		{
-			"id": 3,
-			"type": "Finalizado"
-		}
-	],
-	"pizzas": []
+  "ingredients": {
+    "crusts": [
+      {
+        "id": 1,
+        "type": "Onion"
+      },
+      {
+        "id": 2,
+        "type": "Extra Cheese"
+      },
+      {
+        "id": 3,
+        "type": "Black Olives"
+      },
+      {
+        "id": 4,
+        "type": "Green Pepper"
+      }
+    ],
+    "meats": [
+      {
+        "id": 1,
+        "type": "Chicken"
+      },
+      {
+        "id": 2,
+        "type": "Sausage"
+      },
+      {
+        "id": 3,
+        "type": "Fresh Garlic"
+      },
+      {
+        "id": 4,
+        "type": "Veggi"
+      }
+    ],
+    "options": [
+      {
+        "id": 1,
+        "type": "Chicken"
+      },
+      {
+        "id": 2,
+        "type": "Mushrooms and Banana Peppers"
+      },
+      {
+        "id": 3,
+        "type": "Green Olives and Mashroom"
+      },
+      {
+        "id": 4,
+        "type": "Tomate Ham"
+      },
+      {
+        "id": 5,
+        "type": "Jalapenos and Pineapple"
+      },
+      {
+        "id": 6,
+        "type": "Olives and Bacon"
+      }
+    ]
+  },
+  "status": [
+    {
+      "id": 1,
+      "type": "Requested"
+    },
+    {
+      "id": 2,
+      "type": "In production"
+    },
+    {
+      "id": 3,
+      "type": "Finished"
+    }
+  ],
+  "pizzas": [
+    {
+      "name": "Jelson Jose",
+      "meat": "Chicken",
+      "status": "Finished",
+      "options": [
+        "Chicken"
+      ],
+      "crust": "Black Olives",
+      "id": 7
+    },
+    {
+      "name": "jemol",
+      "meat": "Sausage",
+      "status": "Finished",
+      "options": [
+        "Green Olives and Mashroom",
+        "Tomate Ham"
+      ],
+      "crust": "Extra Cheese",
+      "id": 8
+    },
+    {
+      "name": "Jemol Magalahes J",
+      "meat": "Fresh Garlic",
+      "status": "In production",
+      "options": [
+        "Tomate Ham",
+        "Olives and Bacon"
+      ],
+      "crust": "Black Olives",
+      "id": 9
+    }
+  ]
 }
